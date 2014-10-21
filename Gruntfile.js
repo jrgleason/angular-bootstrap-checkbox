@@ -7,13 +7,13 @@ module.exports = function(grunt) {
         html2js: {
             main: {
                 src: ['src/main/partials/**/*.html','src/main/partials/**/*.jade'],
-                dest: 'bin/ui-partials.js'
+                dest: 'bin/checkbox-partials.js'
             }
         },
         concat: {
           dist: {
             src: ['src/main/angular/app.js','src/main/angular/**/*Module.js','src/main/angular/**/*.js'],
-            dest: 'bin/nj-ng-ui.js',
+            dest: 'bin/jg-checkbox.js',
           }
         },
         watch: {

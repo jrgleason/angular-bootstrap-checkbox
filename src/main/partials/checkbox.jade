@@ -1,6 +1,8 @@
-button.btn.btn-default(type="button", 
+div
+  button.btn.btn-default(type="button", 
                        ng-style="stylebtn", 
 					   ng-class="{'btn-xs':size==='default', 'btn-sm': size==='large', 'btn-lg': size==='largest'}",
-					   ng-click="checkCtrl.click()")
+					   ng-click="checkCtrl.click(value)")
     span.glyphicon(ng-style="styleicon", 
 	               ng-class="{'glyphicon-ok': checked===true}")
+  div(ng-transclude)
